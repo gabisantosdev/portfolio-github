@@ -1,11 +1,19 @@
-import Teste from './teste'
-import EstiloGlobal from './styles'
+import Perfil from './containers/Perfil'
+import Projetos from './containers/Projetos'
+import Sobre from './containers/Sobre'
+import EstiloGlobal, { Container } from './styles'
 
 function App() {
   return (
     <>
       <EstiloGlobal />
-      <Teste />
+      <Container>
+        <Perfil />
+        <main>
+          <Sobre />
+          <Projetos />
+        </main>
+      </Container>
     </>
   )
 }
