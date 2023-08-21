@@ -1,8 +1,12 @@
 import Titulo from '../../components/Titulo'
+import { ImagemDePefil } from './styles'
 
 const Perfil = () => (
   <aside>
-    <img src="https://github.com/gabisantosdev.png" alt="Foto de perfil" />
+    <ImagemDePefil
+      src="https://github.com/gabisantosdev.png"
+      alt="Foto de perfil"
+    />
     <Titulo>Gabriel Santos</Titulo>
   </aside>
 )

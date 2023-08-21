@@ -10,6 +10,10 @@ const EstiloGlobal = createGlobalStyle`
 
   body {
     padding-top: 80px;
+
+    @media (max-width: 768px) {
+      padding-top: 16px;
+    }
   }
 `
 
@@ -23,8 +27,8 @@ export const Container = styled.div`
   grid-template-columns: 128px auto;
   column-gap: 56px;
 
-  img {
-    max-width: 100%;
-    border-radius: 50%;
+  @media (max-width: 768px) {
+    max-width: 80%;
+    display: block;
   }
 `
