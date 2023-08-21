@@ -1,13 +1,22 @@
+import Avatar from '../../components/Avatar'
+import Paragrafo from '../../components/Paragrafo'
 import Titulo from '../../components/Titulo'
-import { ImagemDePefil } from './styles'
+
+import { Descricao, BotaoTema, SidebarContainer } from './styles'
 
 const Perfil = () => (
   <aside>
-    <ImagemDePefil
-      src="https://github.com/gabisantosdev.png"
-      alt="Foto de perfil"
-    />
-    <Titulo>Gabriel Santos</Titulo>
+    <SidebarContainer>
+      <Avatar />
+      <Titulo>Gabriel Santos</Titulo>
+      <Paragrafo tipo="secundario" fontSize={1}>
+        gabisantosdev
+      </Paragrafo>
+      <Descricao tipo="principal" fontSize={0.75}>
+        Engenheiro front-end
+      </Descricao>
+      <BotaoTema>Trocar tema</BotaoTema>
+    </SidebarContainer>
   </aside>
 )
 
