@@ -1,7 +1,10 @@
-import { FotoPerfil } from './styles'
+import * as S from './styles'
 
 const Avatar = () => (
-  <FotoPerfil src="https://github.com/gabisantosdev.png" alt="Foto de perfil" />
+  <S.FotoPerfil
+    src="https://github.com/gabisantosdev.png"
+    alt="Foto de perfil"
+  />
 )
 
 export default Avatar

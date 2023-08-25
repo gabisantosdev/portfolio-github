@@ -2,7 +2,7 @@ import Avatar from '../../components/Avatar'
 import Paragrafo from '../../components/Paragrafo'
 import Titulo from '../../components/Titulo'
 
-import { Descricao, BotaoTema, SidebarContainer } from './styles'
+import * as S from './styles'
 
 type Props = {
   trocarTema: () => void
@@ -10,17 +10,17 @@ type Props = {
 
 const Perfil = (props: Props) => (
   <aside>
-    <SidebarContainer>
+    <S.SidebarContainer>
       <Avatar />
       <Titulo>Gabriel Santos</Titulo>
       <Paragrafo tipo="secundario" fontSize={1}>
         gabisantosdev
       </Paragrafo>
-      <Descricao tipo="principal" fontSize={0.75}>
+      <S.Descricao tipo="principal" fontSize={0.75}>
         Engenheiro front-end
-      </Descricao>
-      <BotaoTema onClick={props.trocarTema}>Trocar tema</BotaoTema>
-    </SidebarContainer>
+      </S.Descricao>
+      <S.BotaoTema onClick={props.trocarTema}>Trocar tema</S.BotaoTema>
+    </S.SidebarContainer>
   </aside>
 )
 

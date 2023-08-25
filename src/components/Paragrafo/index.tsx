@@ -1,4 +1,4 @@
-import { P } from './styles'
+import * as S from './styles'
 
 export type Props = {
   children: string
@@ -7,9 +7,9 @@ export type Props = {
 }
 
 const Paragrafo = ({ children, tipo = 'principal', fontSize }: Props) => (
-  <P fontSize={fontSize} tipo={tipo}>
+  <S.P fontSize={fontSize} tipo={tipo}>
     {children}
-  </P>
+  </S.P>
 )
 
 export default Paragrafo
